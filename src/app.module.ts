@@ -12,10 +12,10 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     }),
     TypeOrmModule.forRoot({
       type: 'postgres',
-      url: process.env.DATABASE_URL,
+      url: process.env.DB_URL,
       username: process.env.DB_USER,
       password: process.env.DB_PASSWORD,
-      database: process.env.DATABASE,
+      database: process.env.DB,
       autoLoadEntities: true,
       synchronize: true
     })
